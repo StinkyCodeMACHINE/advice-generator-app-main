@@ -19,7 +19,11 @@ function App() {
         <h1 className="sr-only">Advice generator app</h1>
         <h2 className="advice-box__id">ADVICE #{advice.id}</h2>
         <p className="advice-box__text">“{advice.advice}”</p>
-        <img className="advice-box__divider" src="" alt="divider" />
+        <img
+          className="advice-box__divider"
+          src="./assets/pattern-divider-desktop.svg"
+          alt="divider"
+        />
         <div
           onClick={async () => {
             const { data } = await axios.get(
