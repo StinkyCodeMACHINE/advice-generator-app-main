@@ -1,0 +1,59 @@
+@use "../util/functions" as u;
+
+.advice-box {
+  background-color: var(--dark-grayish-blue);
+  padding: 3rem 3rem 4.5rem 3rem;
+  border-radius: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+
+  @media (max-width: 545px) {
+    padding: 3rem 1rem 4.5rem 1rem;
+  }
+
+  &__id {
+    color: var(--neon-green);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.25rem;
+  }
+
+  &__text {
+    font-size: u.rem(28);
+    text-align: center;
+    color: var(--light-cyan);
+  }
+
+  &__divider {
+    content: url("./assets/pattern-divider-desktop.svg");
+
+    @media (max-width: 545px) {
+      content: url("./assets/pattern-divider-mobile.svg");
+    }
+  }
+
+  &__dice-container {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    background-color: var(--neon-green);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transform: translateX(-50%);
+  }
+
+  &__dice {
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 0 2rem 1rem var(--neon-green);
+    }
+  }
+}
