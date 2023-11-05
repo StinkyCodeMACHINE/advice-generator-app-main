@@ -6,7 +6,7 @@ function App() {
 
   useState(() => {
     async function getAdvice() {
-      const { data } = await axios.get(`https://api.adviceslip.com/advice`);
+      const { data } = await axios.get(`https://api.adviceslip.com/advice/117`);
       setAdvice(data.slip);
     }
 

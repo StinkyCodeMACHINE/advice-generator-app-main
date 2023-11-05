@@ -19,7 +19,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- Live Site URL: [https://luminous-figolla-ea91da.netlify.app/](https://luminous-figolla-ea91da.netlify.app/)
+- Live Site URL: [https://meek-genie-bd2474.netlify.app/](https://meek-genie-bd2474.netlify.app/)
 
 ## My process
 
